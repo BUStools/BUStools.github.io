@@ -5,18 +5,15 @@ permalink: /:categories/:year/:month/:day/:title
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 highlighter: rouge
 
-# https://help.github.com/articles/migrating-your-pages-site-from-maruku
-markdown: kramdown
-
 # Themes are encouraged to use these universal variables
 # so be sure to set them if your theme uses them.
 #
-title : BUStools
-tagline: BUS format and BUStools
+title : kallisto
+tagline: ultrafast (seriously) abundance estimation
 author :
-  name : 
+  name : Pachter Lab
   email : blah@email.test
-  github : username
+  github : pachterlab
   twitter : username
   feedburner : feedname
 
@@ -28,7 +25,7 @@ author :
 # Else if you are pushing to username.github.io, replace with your username.
 # Finally if you are pushing to a GitHub project page, include the project name at the end.
 #
-production_url : http://username.github.io
+production_url : https://pachterlab.github.io/kallisto
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
@@ -57,7 +54,7 @@ JB :
   #   - Only the following values are falsy: ["", null, false]
   #   - When setting BASE_PATH it must be a valid url.
   #     This means always setting the protocol (http|https) or prefixing with "/"
-  BASE_PATH : false
+  BASE_PATH : https://pachterlab.github.io/kallisto
 
   # By default, the asset_path is automatically defined relative to BASE_PATH plus the enabled theme.
   # ex: [BASE_PATH]/assets/themes/[THEME-NAME]
@@ -103,12 +100,9 @@ JB :
   analytics :
     provider : google
     google :
-        tracking_id : 'UA-***'
-    googleUA :
-        tracking_id : 'UA-***'
-        property_name : 'PROPERTY NAME'
+        tracking_id : 'UA-62643000-1'
     getclicky :
-      site_id : 
+      site_id :
     mixpanel :
         token : '_MIXPANEL_TOKEN_'
     piwik :
@@ -133,4 +127,3 @@ JB :
   # and include your custom code. Your custom file must be defined at:
   #   ./_includes/custom/[HELPER]
   # where [HELPER] is the name of the helper you are overriding.
-  
