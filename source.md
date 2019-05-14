@@ -34,18 +34,33 @@ Other dependencies are included, or can be installed using package managers on t
     - CentOS: `sudo yum install hdf5-devel`
 
 
-## Compiling from source
+## Installation from source
 
-`git clone https://github.com/BUStools/bustools.git` # Download bustools 
+Download bustools with
 
-`cd bustools` # Navigate to the bustools directory
+`git clone https://github.com/BUStools/bustools.git`
 
-`mkdir build` # Make a build directory and move there:
+Navigate to the bustools directory
+
+`cd bustools`
+
+Make a build directory and move there:
+
+`mkdir build`
+
 `cd build`
-`cmake ..` # Run cmake
-`make` # Build the code
 
-The bustools executable is now located in `build/src`. To install bustools into the cmake install prefix path type:
+Run cmake:
+
+`cmake ..`
+
+Build the code:
+
+`make`
+
+The bustools executable is now located in build/src. To install bustools into the cmake install prefix path type:
+
 `make install`
+
 
 
