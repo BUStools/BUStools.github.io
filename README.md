@@ -1,3 +1,3 @@
 # bustools_site
 
-## https://github.com/Munfred/bustools_site
+## https://munfred.github.io/bustools_site/
