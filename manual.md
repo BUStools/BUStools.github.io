@@ -49,7 +49,7 @@ Options:
 -o, --output          File for text output
 ~~~
 
-#### Capture
+### Capture
 
 `bulstools capture` can separate BUS files into multiple files according to some criteria 
 
@@ -61,7 +61,7 @@ Required arguments:
 -o, --output-dir=STRING       Directory to write output to
 ~~~
 
-#### Inspect
+### Inspect
 
 `bustools inspect inspect` outputs quality control metrics of the BUS file provided
 ~~~
@@ -70,6 +70,6 @@ Usage: bustools inspect BUS-file
 
 ~~~
 
-#### version
+### version
 
 `bustools version` displays the current version of the software.
