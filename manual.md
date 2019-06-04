@@ -54,7 +54,7 @@ Options:
 `bulstools capture` can separate BUS files into multiple files according to some criteria 
 
 ~~~
-Usage: `bulstools capture [arguments] ouput-directories
+Usage: bulstools capture [arguments] ouput-directories
 
 Required arguments:
 -i, --classes=STRING          Filename with equivalence classes to be split to
