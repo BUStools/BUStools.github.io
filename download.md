@@ -11,7 +11,7 @@ group: navigation
 
 The __bustools__ GitHub repository is [here](https://github.com/BUStools/bustools/).
 
-Binaries for Linux, Mac and Windows are available at:
+Binaries for Linux, Mac and Windows can be downloaded via the links below:
 
 <table class="table">
   <thead>
