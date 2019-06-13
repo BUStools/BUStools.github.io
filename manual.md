@@ -69,7 +69,7 @@ Options:
 
 The output is written either to an output file specified with `-o` or to `stdout` using `-p`. The `text` command accepts `-` as an input file to read from `stdin`.
 
-### correct
+### Correct
 
 BUS files can be barcode error corrected w.r.t. a technology specific whitelist of barcodes. The `correct` command will correct all barcodes that are at Hamming distance 1 (i.e. one substitution) away from a single barcode in the whitelist.
 
@@ -86,7 +86,7 @@ The BUS input file does not need to be sorted.
 
 The `correct` command accepts `-` as an input file to read from `stdin`, and can write to `stdout` using `-p`. 
 
-### count
+### Count
 
 BUS files can be converted into a barcode-feature matrix, where the feature can be TCCs (Transcript Compatibility Counts) or genes. The output is in a standard [Matrix Market Exchange format](https://math.nist.gov/MatrixMarket/formats.html#MMformat)
 
