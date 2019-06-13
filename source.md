@@ -20,18 +20,6 @@ Other dependencies are included, or can be installed using package managers on t
     - Mac: `brew install cmake`
     - Ubuntu: `sudo apt-get install cmake`
     - CentOS: `sudo yum install cmake`
-- __zlib__ (should be installed on OSX >= 10.9)
-    - Mac: Should be installed by default
-    - Ubuntu: `sudo apt-get install zlib1g-dev`
-    - CentOS: `sudo yum install zlib-devel`
-- __autoconf__ 
-    - Mac: `brew install autoconf`
-    - Ubuntu: `sudo apt-get install autoconf`
-    - CentOS: `sudo yum install autoconf`
-- __HDF5__ C library version >= 1.8.12
-    - Mac: `brew install hdf5`
-    - Ubuntu: `sudo apt-get install libhdf5-dev`
-    - CentOS: `sudo yum install hdf5-devel`
 
 
 ## Installation from source
