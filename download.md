@@ -11,6 +11,12 @@ group: navigation
 
 The __bustools__ GitHub repository is [here](https://github.com/BUStools/bustools/).
 
+With [conda](https://conda.io/docs/index.html) installed __bustools__ can be downloaded and installed with:
+
+```
+conda install -c bioconda bustools 
+```
+
 Binaries for Linux, Mac and Windows can be downloaded via the links below:
 
 <table class="table">
