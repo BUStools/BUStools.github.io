@@ -45,7 +45,7 @@ Binaries for Linux, Mac and Windows can be downloaded via the links below:
 </table>
 
 
-#### Licence
+#### License
 
 __bustools__ is distributed under the BSD 2-clause "Simplified" License:
 
