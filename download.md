@@ -38,7 +38,7 @@ Binaries for Linux, Mac and Windows can be downloaded via the links below:
         <td><a href="https://github.com/BUStools/bustools/releases/download/{{ post.version }}/bustools_mac-{{ post.version }}.tar.gz">Mac</a></td>
         <td><a href="https://github.com/BUStools/bustools/releases/download/{{ post.version }}/bustools_linux-{{ post.version }}.tar.gz">Linux</a>  </td>
         <td><a href="https://github.com/BUStools/bustools/releases/download/{{ post.version }}/bustools_windows-{{ post.version }}.zip">Windows</a> </td>
-        <td><a href="https://github.com/BUStools/bustools/releases/download/{{ post.version }}/bustools_rock64-{{ post.version }}.zip">Rock64</a> </td>
+        <td><a href="https://github.com/BUStools/bustools/releases/download/{{ post.version }}/bustools_rock64-{{ post.version }}.tar.gz">Rock64</a> </td>
         
         <td><a href="https://github.com/BUStools/bustools/archive/{{ post.version }}.tar.gz">Source</a></td>
     </tr>
