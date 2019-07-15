@@ -6,7 +6,7 @@ group: navigation
 ---
 {% include JB/setup %}
 
-The __bustools__ GitHub repository is https://github.com/BUStools/bustools. Currently, __bustools__ can be built on Linux and Mac. If building on Mac, we suggest using a package manager such as [Homebrew](http://brew.sh) to download dependencies. Homebrew is easily installed by copying and pasting the command below at a terminal prompt:
+The __bustools__ GitHub repository is https://github.com/BUStools/bustools. Currently, __bustools__ can be built on Linux, Mac, Rock64 (ARM) and Windows. If building on Mac, we suggest using a package manager such as [Homebrew](http://brew.sh) to download dependencies. Homebrew is easily installed by copying and pasting the command below at a terminal prompt:
 
 `ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
 
