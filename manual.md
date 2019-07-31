@@ -94,7 +94,7 @@ The `correct` command accepts `-` as an input file to read from `stdin`, and can
 BUS files can be converted into a barcode-feature matrix, where the feature can be TCCs (Transcript Compatibility Counts) or genes. The output is in a standard [Matrix Market Exchange format](https://math.nist.gov/MatrixMarket/formats.html#MMformat)
 
 ~~~
-Usage: bustools count [options] bus-files
+Usage: bustools count [options] sorted-bus-files
 
 Options: 
 -o, --output          File for corrected bus output
@@ -131,8 +131,6 @@ Options:
 -p, --pipe            Write to standard output
 
 ~~~
-
-The input BUS file must be sorted via the `sort` command.
 
 The `capture` command accepts `-` as an input file to read from `stdin`, and can write to `stdout` using `-p`. The BUS file is filtered by the `--capture` list, which can specify a list of transcripts (`-s`), a list of barcodes (`-b`), or UMIs (`-u`). The default behaviour is to include only records that match the capture list, to reject records from the capture list the user can specify `-x`. Matching on barcodes and UMIs is exact. Matching on equivalence classes with respect to the capture list is an intersection.
 
@@ -187,7 +185,6 @@ Number of reads with barcode in agreement with whitelist: 3281671 (95.623992%)
 
 `bustools linker` removes specified section of barcode in BUS files.
 
-
 ~~~
 Usage: bustools linker [options] bus-files
 
@@ -202,7 +199,7 @@ If `--start` is `-1`, the removed section begins at beginning of barcode. Likewi
 
 ### Project
 
-The kallisto bus command maps reads to a set of transcripts. bustools project takes as input a sorted BUS file and a transcript to gene map (`tr2g` file), and outputs a BUS file, a `matrix.ecz file, and a list of genes, which collectively map each read to a set of genes.
+The kallisto bus command maps reads to a set of transcripts. bustools project takes as input a sorted BUS file and a transcript to gene map (`tr2g` file), and outputs a BUS file, a `matrix.ec` file, and a list of genes, which collectively map each read to a set of genes.
 
 ~~~
 Usage: bustools project [options] sorted-bus-file
@@ -215,6 +212,8 @@ Options:
 -p, --pipe            Write to standard output
 ~~~
 
+The input BUS file must be sorted via the `sort` command.
+
 ### Whitelist
 
 `bustools whitelist` generates a whitelist based on the barcodes in a sorted BUS file.
@@ -226,5 +225,7 @@ Options:
 -o, --output        File for the whitelist
 -f, --threshold     Minimum number of times a barcode must appear to be included in whitelist
 ~~~
+
+The input BUS file must be sorted via the `sort` command.
 
 `--threshold` is a  optional parameter. If not provided, bustools whitelist will determine a threshold based on the first `200` to `100200` records.
