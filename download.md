@@ -32,7 +32,7 @@ Binaries for Linux, Mac and Windows can be downloaded via the links below:
 
 {% for post in site.categories.releases %}
     <tr>
-    	<td>Release notes: <a href="{{ site.url }}/bustools_site/{{ post.url }}">{{ post.version }}</a></td>
+    	<td>Release notes: <a href="{{ site.url }}/{{ post.url }}">{{ post.version }}</a></td>
     	<td><span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time></span></td>
 
         <td><a href="https://github.com/BUStools/bustools/releases/download/{{ post.version }}/bustools_mac-{{ post.version }}.tar.gz">Mac</a></td>
