@@ -11,11 +11,11 @@ Typing `bustools` produces a list of usage options, which are:
 To see a list of available commands type `bustools` in the terminal
 
 ~~~
-bustools 0.39.3
+bustools 0.39.4
 
 Usage: bustools <CMD> [arguments] ..
 
-Where <CMD> can be one of: 
+Where <CMD> can be one of:
 
 capture         Capture records from a BUS file
 correct         Error correct a BUS file
@@ -96,12 +96,13 @@ BUS files can be converted into a barcode-feature matrix, where the feature can 
 ~~~
 Usage: bustools count [options] sorted-bus-files
 
-Options: 
+Options:
 -o, --output          File for corrected bus output
 -g, --genemap         File for mapping transcripts to genes
 -e, --ecmap           File for mapping equivalence classes to transcripts
 -t, --txnames         File with names of transcripts
---genecounts          Aggregate counts to genes only
+    --genecounts      Aggregate counts to genes only
+    --em              Estimate gene abundances using EM algorithm
 -m, --multimapping    Include bus records that pseudoalign to multiple genes
 ~~~
 
@@ -110,6 +111,10 @@ The input BUS file needs to be sorted via the `sort` command.
 The `correct` command accepts `-` as an input file to read from `stdin`, but does not write to `stdout`.
 
 By default `count` does not count records that map to multiple genes, to include records that map to multiple genes use the `-m` flag, this results in the count being split equally by the number of genes it maps to.
+
+The `bustools count` command adds the `--em` option that estimates gene abundances using an EM algorithm for reads that pseudoalign to multiple genes.
+
+Note that the `--multimapping` option splits the read counts evenly across all genes, whereas the EM algorithm gives a more statistically valid answer. The two options are mutually exclusive.
 
 
 ### Capture
